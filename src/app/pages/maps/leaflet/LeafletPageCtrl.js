@@ -9,9 +9,9 @@
       .controller('LeafletPageCtrl', LeafletPageCtrl);
 
   /** @ngInject */
-  function LeafletPageCtrl($timeout) {
+  function LeafletPageCtrl($timeout, layoutPaths) {
     function initialize() {
-      L.Icon.Default.imagePath = 'assets/img/theme/vendor/leaflet/dist/images';
+      L.Icon.Default.imagePath = layoutPaths.images.root + 'theme/vendor/leaflet/dist/images';
       var map = L.map(document.getElementById('leaflet-map')).setView([51.505, -0.09], 13);
       L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'

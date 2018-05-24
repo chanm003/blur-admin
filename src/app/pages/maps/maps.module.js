@@ -21,15 +21,6 @@
             order: 500,
           },
         })
-        .state('maps.gmap', {
-          url: '/gmap',
-          templateUrl: 'app/pages/maps/google-maps/google-maps.html',
-          controller: 'GmapPageCtrl',
-          title: 'Google Maps',
-          sidebarMeta: {
-            order: 0,
-          },
-        })
         .state('maps.leaflet', {
           url: '/leaflet',
           templateUrl: 'app/pages/maps/leaflet/leaflet.html',

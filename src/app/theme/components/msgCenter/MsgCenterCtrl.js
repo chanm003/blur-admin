@@ -9,7 +9,7 @@
       .controller('MsgCenterCtrl', MsgCenterCtrl);
 
   /** @ngInject */
-  function MsgCenterCtrl($scope, $sce) {
+  function MsgCenterCtrl($scope, $sce, layoutPaths) {
     $scope.users = {
       0: {
         name: 'Vlad',
@@ -37,7 +37,7 @@
         time: '2 hrs ago'
       },
       {
-        image: 'assets/img/shopping-cart.svg',
+        image: layoutPaths.images.root + 'shopping-cart.svg',
         template: 'New orders received.',
         time: '5 hrs ago'
       },
@@ -52,7 +52,7 @@
         time: '2 days ago'
       },
       {
-        image: 'assets/img/comments.svg',
+        image: layoutPaths.images.root + 'comments.svg',
         template: 'New comments on your post.',
         time: '3 days ago'
       },

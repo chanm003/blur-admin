@@ -7,6 +7,10 @@
 
   var IMAGES_ROOT = 'assets/img/';
 
+  if (window.environmentSettings.type === 'DEV') {
+    IMAGES_ROOT = window.environmentSettings.baseUrl + '/assets/img/';
+  }
+
   angular.module('BlurAdmin.theme')
     .constant('layoutSizes', {
       resWidthCollapseSidebar: 1200,
@@ -16,8 +20,8 @@
       images: {
         root: IMAGES_ROOT,
         profile: IMAGES_ROOT + 'app/profile/',
-        amMap: 'assets/img/theme/vendor/ammap//dist/ammap/images/',
-        amChart: 'assets/img/theme/vendor/amcharts/dist/amcharts/images/'
+        amMap: IMAGES_ROOT + 'theme/vendor/ammap//dist/ammap/images/',
+        amChart: IMAGES_ROOT + 'theme/vendor/amcharts/dist/amcharts/images/'
       }
     })
     .constant('colorHelper', {
