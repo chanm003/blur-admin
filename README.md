@@ -21,7 +21,7 @@ This modified blur-admin template
       | -------------              |---------------                               | 
       | ```app/```                 | ```http:localhost:3000/app/```               |
       | ```assets/```              | ```http:localhost:3000/assets/```            |
-      | ```bower_components/```    | ```http:localhost:3000/bower_components/```  |
+      | ```../bower_components/```    | ```http:localhost:3000/bower_components/```  |
 
 
 ## Production
