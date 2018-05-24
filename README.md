@@ -19,9 +19,9 @@ This modified blur-admin template
 4. Perform Replace operation on ```index.html```
    *  | Before                     | After                                        |
       | -------------              |---------------                               | 
-      | src="app/                 | src="http:localhost:3000/app/               |
-      | href="assets/              | href="http:localhost:3000/assets/            |
-      | ../bower_components/    | http:localhost:3000/bower_components/  |
+      | "app/                 | "http:localhost:3000/app/               |
+      | "assets/              | "http:localhost:3000/assets/            |
+      | "../bower_components/    | "http:localhost:3000/bower_components/  |
 
 
 ## Production
